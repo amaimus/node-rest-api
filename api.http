@@ -1,0 +1,25 @@
+GET http://localhost:3000/movies
+
+### recuperar pelicula por ID
+GET http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### recuperar todas las peliculas por un género
+GET http://localhost:3000/movies?genre=Action
+
+### Crear una pelicula
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": "Zumba",
+    "year": 1999,
+    "director": "Yo mismo",
+    "duration": 999,
+    "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp",
+    "genre": [
+      "Leyenda"
+    ],
+    "rate": 9.4
+  }
+
